@@ -27,3 +27,25 @@ nav a:hover {
         align-items: flex-start;
     }
 }
+
+footer {
+    background-color: #000; /* Black background */
+    color: #ccc; /* Light gray text */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff; /* White on hover */
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
