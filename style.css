@@ -1,0 +1,3 @@
+git mv style.css.txt style.css
+git commit -m "Rename style file to style.css"
+git push --set-upstream origin make-site-responsive
