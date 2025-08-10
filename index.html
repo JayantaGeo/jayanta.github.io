@@ -1,39 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dr. Jayanta Das</title>
+    <title>Home – Dr. Jayanta Das</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navigation Menu -->
+<!-- Navigation -->
 <nav>
-  <a href="index.html">Home</a>
-  <a href="news.html">News</a>
-  <a href="teaching.html">Teaching</a>
-  <a href="projects.html">Projects</a>
-  <a href="achievements.html">Achievements</a>
-  <a href="publications.html">Publications</a>
-  <a href="team.html">Team</a>
-  <a href="social-activities.html">Social Activities</a> <!-- NEW -->
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="projects.html">Projects</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="social-activities.html">Social Activities</a>
 </nav>
 
-<!-- Page Content -->
-<h1>Welcome to Dr. Jayanta Das's Website</h1>
-<p>Select a section from the menu above to explore my work, teaching, projects, and more.</p>
+<!-- Main Content -->
+<main class="container">
+    <h1>Welcome to Dr. Jayanta Das’s Website</h1>
+    <p>
+        I am an academician and researcher specializing in Geoinformatics, Remote Sensing, and Environmental Studies.
+        My work focuses on sustainable development, natural resource management, and geospatial data analysis.
+    </p>
+    <p>
+        Browse through my teaching resources, publications, research projects, and achievements to learn more about my work and contributions.
+    </p>
 
-<!-- Footer with Social Media Links -->
-<footer>
-  <p>Connect with me:</p>
-  <a href="https://scholar.google.com" target="_blank">Google Scholar</a> |
-  <a href="https://www.researchgate.net" target="_blank">ResearchGate</a> |
-  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-  <a href="https://twitter.com" target="_blank">Twitter</a> |
-  <a href="https://orcid.org" target="_blank">ORCID</a>
-</footer>
+    <h2>Quick Links</h2>
+    <ul>
+        <li><a href="publications.html">View my Publications</a></li>
+        <li><a href="projects.html">Current Projects</a></li>
+        <li><a href="team.html">Meet My Research Team</a></li>
+        <li><a href="social-activities.html">Social Initiatives</a></li>
+    </ul>
+</main>
+
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
 
 </body>
 </html>
-
