@@ -1,3 +1,29 @@
 git mv style.css.txt style.css
 git commit -m "Rename style file to style.css"
 git push --set-upstream origin make-site-responsive
+
+/* Mobile-friendly navigation */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+}
+
+/* For small screens: stack menu links */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
