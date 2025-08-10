@@ -27,109 +27,47 @@
 
 <h1>Publications</h1>
 
-<!-- 2023 -->
-<div class="year-block">
-  <details>
-    <summary>2023</summary>
-    <div class="content-list">
-      <ul>
-        <li>Mitra, R., Das, J. (2023). GIS-based data-driven bivariate statistical models for landslide susceptibility prediction in Upper Tista Basin, India. <em>Heliyon</em>, 9(5), E16186. <a href="https://doi.org/10.1016/j.heliyon.2023.e16186" target="_blank">DOI</a></li>
-        <li>Osman, S.A., Das, J. (2023). GIS-based flood risk assessment using multi-criteria decision analysis of Shebelle River Basin in southern Somalia. <em>SN Applied Sciences</em>, 5, 134. <a href="https://doi.org/10.1007/s42452-023-05360-5" target="_blank">DOI</a></li>
-        <li>Sutradhar, C., Poddar, D., Das, J. (2023). Optimization of conditioning factors for groundwater potential zonation using GIS-based single parameter and map removal sensitivity analysis in Alipurduar district, West Bengal, India. <em>Modeling Earth Systems and Environment</em>, 10, 1671–1694. <a href="https://doi.org/10.1007/s40808-023-01859-3" target="_blank">DOI</a></li>
-        <li>Barman, J., Ali, S.S., Biswas, B., Das, J. (2023). Application of index of entropy and Geospatial techniques for landslide prediction in Lunglei district, Mizoram, India. <em>Natural Hazards Research</em>, 3(3), 508–521. <a href="https://doi.org/10.1016/j.nhres.2023.06.006" target="_blank">DOI</a></li>
-        <li>… (Add more chapters or book entries for 2023 as needed from your list)</li>
-      </ul>
-    </div>
-  </details>
+<div id="publications-container">
+  <p>Loading publications...</p>
 </div>
 
-<!-- 2022 -->
-<div class="year-block">
-  <details>
-    <summary>2022</summary>
-    <div class="content-list">
-      <ul>
-        <li>Mitra, R., Saha, P., &amp; Das, J. (2022). Assessment of the performance of GIS-based analytical hierarchical process (AHP) approach for flood modelling in Uttar Dinajpur district of West Bengal, India. <em>Geomatics, Natural Hazards and Risk</em>, 13(1), 2183–2226. <a href="https://doi.org/10.1080/19475705.2022.2112094" target="_blank">DOI</a></li>
-        <li>… (Add more from your 2022 list)</li>
-      </ul>
-    </div>
-  </details>
-</div>
+<script>
+  fetch('publications.json')
+    .then(response => response.json())
+    .then(data => {
+      let container = document.getElementById('publications-container');
+      container.innerHTML = '';
 
-<!-- 2021 -->
-<div class="year-block">
-  <details>
-    <summary>2021</summary>
-    <div class="content-list">
-      <ul>
-        <li>Spatio-temporal characterization of rainfall in Bangladesh: an innovative trend and discrete wavelet transformation approaches. <em>Theoretical and Applied Climatology</em>, 143(3), 1557–1579. (2021)</li>
-        <li>… (Add remaining entries from 2021)</li>
-      </ul>
-    </div>
-  </details>
-</div>
+      for (const year of Object.keys(data)) {
+        let block = document.createElement('div');
+        block.className = 'year-block';
 
-<!-- 2019 -->
-<div class="year-block">
-  <details>
-    <summary>2019</summary>
-    <div class="content-list">
-      <ul>
-        <li>Spatio-temporal trend and change point detection of winter temperature of North Bengal, India. <em>Spatial Information Research</em>, 27(4), 411–424. (2019)</li>
-      </ul>
-    </div>
-  </details>
-</div>
+        let details = document.createElement('details');
+        let summary = document.createElement('summary');
+        summary.textContent = year;
+        details.appendChild(summary);
 
-<!-- 2018 -->
-<div class="year-block">
-  <details>
-    <summary>2018</summary>
-    <div class="content-list">
-      <ul>
-        <li>Trend analysis of long-term climatic parameters in Dinhata of Koch Bihar district, West Bengal. <em>Spatial Information Research</em>, 26(3), 271–280. (2018)</li>
-        <li>Regional disparity in the level of development in West Bengal: A geographical analysis. <em>Indian Journal of Regional Science</em>, 50(1), 53–63. (2018)</li>
-      </ul>
-    </div>
-  </details>
-</div>
+        let content = document.createElement('div');
+        content.className = 'content-list';
+        let ul = document.createElement('ul');
 
-<!-- 2016 -->
-<div class="year-block">
-  <details>
-    <summary>2016</summary>
-    <div class="content-list">
-      <ul>
-        <li>Profitable and viable alternative to tobacco crop in Dinhata Subdivision of Koch Behar district, West Bengal. <em>Indian Journal of Landscape System and Ecological Studies</em>, 39(2), 70–88. (2016)</li>
-        <li>Role of Self-Help Groups in Socioeconomic Change of Rural Women: A Micro Level Study. <em>Indian Streams Research Journal</em>, 6(1), 1–11. (2016)</li>
-      </ul>
-    </div>
-  </details>
-</div>
+        data[year].forEach(pub => {
+          let li = document.createElement('li');
+          li.innerHTML = pub; // already contains HTML links from your script
+          ul.appendChild(li);
+        });
 
-<!-- 2012 -->
-<div class="year-block">
-  <details>
-    <summary>2012</summary>
-    <div class="content-list">
-      <ul>
-        <li>Probability and variability analysis of rainfall characteristics of Dinhata in Koch Behar district of West Bengal. <em>Golden Research Thoughts</em>, 2(1), 1–9. (2012)</li>
-      </ul>
-    </div>
-  </details>
-</div>
-
-<!-- 2011 -->
-<div class="year-block">
-  <details>
-    <summary>2011</summary>
-    <div class="content-list">
-      <ul>
-        <li>Factors influencing the socio-economic status of Toto tribe in Madarihat block of Jalpaiguri district, West Bengal. <em>Geo Analyst</em>, 1(2), 66–71. (2011)</li>
-      </ul>
-    </div>
-  </details>
-</div>
+        content.appendChild(ul);
+        details.appendChild(content);
+        block.appendChild(details);
+        container.appendChild(block);
+      }
+    })
+    .catch(error => {
+      document.getElementById('publications-container').innerHTML = '<p>Error loading publications.</p>';
+      console.error(error);
+    });
+</script>
 
 </body>
 </html>
