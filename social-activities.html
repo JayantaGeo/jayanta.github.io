@@ -1,44 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Social Activities - Dr. Jayanta Das</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Activities - Dr. Jayanta Das</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            text-align: center;
+            padding: 30px 10px;
+            background-color: #343a40;
+            color: white;
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #495057;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #343a40;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: #007bff;
+        }
+        .role {
+            font-style: italic;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
 
+<header>
+    <img src="images/jayanta.jpeg" alt="Dr. Jayanta Das">
+    <h1>Dr. Jayanta Das</h1>
+    <p>Social Activities</p>
+</header>
+
 <nav>
-   <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="teaching.html">Teaching</a>
+    <a href="index.html">Home</a>
     <a href="projects.html">Projects</a>
-    <a href="achievements.html">Achievements</a>
-    <a href="publications.html">Publications</a>
-    <a href="team.html">Team</a>
-    <a href="social-activities.html">Social Activities</a>
-  </nav>
+    <a href="social.html">Social Activities</a>
+    <a href="contact.html">Contact</a>
+</nav>
 
-<h1>Social Activities</h1>
-<p>Details of social activities, community involvement, outreach programs, and voluntary work will be listed here.</p>
+<main>
+    <div class="card">
+        <h3>GeoIntegrity: For Untainted Teacher</h3>
+        <p class="role">Role: Program Co-ordinator</p>
+        <p>Free Coaching Centre</p>
+    </div>
 
-<footer>
-  <p>Connect with me:</p>
-  <a href="https://scholar.google.com" target="_blank">Google Scholar</a> |
-  <a href="https://www.researchgate.net" target="_blank">ResearchGate</a> |
-  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-  <a href="https://twitter.com" target="_blank">Twitter</a> |
-  <a href="https://orcid.org" target="_blank">ORCID</a>
-</footer>
+    <div class="card">
+        <h3>Rampurhat College Coaching and Counselling Centre</h3>
+        <p class="role">Role: Program Co-ordinator</p>
+        <p>Free Competitive Examination Coaching and Counselling</p>
+    </div>
+
+    <div class="card">
+        <h3>Tree Plantation Program</h3>
+        <p>World Environmental Day 2024</p>
+    </div>
+</main>
 
 </body>
 </html>
-
-<div id="footer"></div>
-<script>
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        });
-</script>
-
