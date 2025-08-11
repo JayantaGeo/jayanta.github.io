@@ -1,82 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Publications – Dr. Jayanta Das</title>
+  <meta charset="utf-8" />
+  <title>Publications - Dr. Jayanta Das</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; margin: 20px; }
-    nav { background: #2c3e50; padding: 10px; margin-bottom: 20px; }
-    nav a { color: white; margin-right: 15px; text-decoration: none; }
-    nav a:hover { text-decoration: underline; }
-    h1 { text-align: center; color: #2c3e50; }
-    .year-block { margin-top: 30px; }
-    details summary { background: #1abc9c; color: white; padding: 10px; font-size: 1.1em; cursor: pointer; border-radius: 4px; }
-    .content-list { background: white; padding: 10px 20px; border: 1px solid #ccc; border-top: none; }
-    .content-list ul { list-style: none; padding-left: 0; }
-    .content-list li { margin: 8px 0; }
-    .content-list a { color: #1a0dab; text-decoration: none; }
-    .content-list a:hover { text-decoration: underline; }
+    :root {
+      --brand:#1abc9c;
+      --nav:#2c3e50;
+      --bg:#f4f4f4;
+      --card:#ffffff;
+      --text:#222;
+      --muted:#666;
+    }
+    body{font-family:Arial,Helvetica,sans-serif;margin:0;background:var(--bg);color:var(--text);line-height:1.5;}
+    header{background:var(--nav);color:white;padding:22px 16px;text-align:center}
+    header h1{margin:0;font-size:1.6rem}
+    nav{background:var(--nav);display:flex;flex-wrap:wrap;justify-content:center}
+    nav a{color:white;text-decoration:none;padding:12px 14px;display:inline-block}
+    nav a:hover{background:var(--brand);color:#000}
+    .container{max-width:980px;margin:22px auto;padding:0 16px}
+    h2{color:var(--nav);margin:0 0 12px 0}
+    .year-block{margin-bottom:18px;border-radius:6px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.06)}
+    details summary{background:var(--brand);color:white;padding:12px 16px;font-weight:600;cursor:pointer;list-style:none}
+    .content{background:var(--card);padding:14px 18px;border-top:1px solid #eee}
+    .section-title{font-weight:700;margin-top:8px;color:var(--nav)}
+    ul.pub-list{list-style:none;padding-left:0;margin:8px 0 0 0}
+    ul.pub-list li{padding:8px 0;border-bottom:1px dashed #eee}
+    a.doi{color:#1a0dab;text-decoration:none}
+    a.doi:hover{text-decoration:underline}
+    .meta{color:var(--muted);font-size:0.95rem}
+    footer{margin-top:20px;padding:16px;text-align:center;color:white;background:var(--nav)}
+    @media (max-width:600px){header h1{font-size:1.2rem}}
   </style>
 </head>
 <body>
 
+<header>
+  <h1>Publications — Dr. Jayanta Das</h1>
+</header>
+
 <nav>
   <a href="index.html">Home</a>
+  <a href="news.html">News</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="projects.html">Projects</a>
+  <a href="achievements.html">Achievements</a>
   <a href="publications.html">Publications</a>
+  <a href="team.html">Team</a>
+  <a href="social_activities.html">Social Activities</a>
 </nav>
 
-<h1>Publications</h1>
+<div class="container">
 
-<div id="publications-container">
-  <p>Loading publications...</p>
-</div>
+  <!-- 2025 -->
+  <div class="year-block">
+    <details open>
+      <summary>2025</summary>
+      <div class="content">
+        <div class="section-title">Book Publications</div>
+        <ul class="pub-list">
+          <li>Biswas, B., Ghute, B., &amp; Das, J. (2025). <em>Geoinformatics for Flood Risk Management: Applications and Strategies.</em> CRC Press. <a class="doi" href="https://doi.org/10.1201/9781003533511" target="_blank">DOI</a></li>
+          <li>Das, J., Pradhan, B., Mitra, R., Chouhan, P., &amp; Le, C. (2025). <em>Technology-Based Solutions for Sustainable Groundwater Management: Challenges, Models, and Strategies.</em> Elsevier. ISBN: 9780443337871</li>
+          <li>Das, J., &amp; Halder, S. (2025). <em>Progress in Multicriteria Decision Making Models: A New Paradigm to Monitor Hazards.</em> Springer, Cham. <a class="doi" href="https://doi.org/10.1007/978-3-031-89246-2" target="_blank">DOI</a></li>
+          <li>Chouhan, P., Das, K.C., Roy, A., Kapasia, N., Rahaman, M., &amp; Das, J. (2025). <em>Women's Health Dynamics in South Asia: Perspectives, Challenges, and Innovations.</em> Springer, Cham. (Submitted)</li>
+          <li>Das, J. &amp; Alam, J. (2025). <em>Recent Advancement in Geographical Research: Instances from India.</em> Springer, Cham. (Submitted)</li>
+          <li>Das, J. &amp; Alam, J. (2025). <em>Exploring New Dimensions for Sustainable Development Goals - Innovative Approaches in Geographical Research 2024.</em> Springer Nature Switzerland AG. (Submitted)</li>
+          <li>Das, J., Mondal, T., Mawale, G.N., Kamruzzaman, M., &amp; Alam, G. M. (2025). <em>The Nexus between Geography and Sustainability: Exploring Emerging Tools and Techniques.</em> Springer Nature Switzerland AG. (Submitted)</li>
+        </ul>
+
+        <div class="section-title">Journal Articles</div>
+        <ul class="pub-list">
+          <li>Bora, S.L., Bharali, S., Bhuyan, K., Das, J., Hazarika, P., Eliwa, M., Abdalla, G. S. &amp; Abouelenein, M. (2025). Detecting Warming Trends and Climate Regime Transitions Using Satellite-Derived Temperature Data in Northeast India. <em>European Journal of Pure and Applied Mathematics</em>, 18(3), 6655. <a class="doi" href="https://doi.org/10.29020/nybg.ejpam.v18i3.6655" target="_blank">DOI</a></li>
+          <li>Golder, J., Das, J. &amp; Bhandari, G. (2025). Impact of Climate Change and Anthropogenic Activities on Shallow Landslide Initiation in Pangthang, East Sikkim: A Geospatial Technology and FAHP-Based Approach. <em>J. Inst. Eng. India Ser. A</em>. <a class="doi" href="https://doi.org/10.1007/s40030-025-00906-9" target="_blank">DOI</a></li>
+          <li>Meer, M.S., Mishra, A.K., Nagaraju, V., Das, J., &amp; Tariq, A. (2025). Satellite-based assessment of extreme rainfall during the 2019 Indian monsoon: climatic linkages to IOD and ENSO. <em>Model. Earth Syst. Environ.</em>, 11, 305. <a class="doi" href="https://doi.org/10.1007/s40808-025-02489-7" target="_blank">DOI</a></li>
+          <li>Rajput, S., Mohanta, A., Banerjee, B., Das, J., Mishra, S., &amp; Sankar, H. (2025). Harnessing GIS, remote sensing, and machine learning for sustainable management and carbon sequestration of non-timber forest products in Gujarat, India. <em>Agroforest Syst</em>, 99, 92. <a class="doi" href="https://doi.org/10.1007/s10457-025-01186-9" target="_blank">DOI</a></li>
+          <li>Barman, J., Biswas, B., Das, J., Hasher F.F.B., &amp; Zhran, M. (2025). Least cost path analysis for alternative road network assessment of landslide-prone NH-2, Mizoram, NE India. <em>Geocarto International</em>, 40(1), 2490268. <a class="doi" href="https://doi.org/10.1080/10106049.2025.2490268" target="_blank">DOI</a></li>
+          <li>Roy, S.K., Dey, S., Das, J., Hossen, B., Das, S., Hasan, M.M., &amp; Mojumder, P. (2025). Utilising Machine Learning Approaches for Enhanced Landslide Susceptibility Mapping in Sikkim, India. <em>Geological Journal</em>. <a class="doi" href="https://doi.org/10.1002/gj.5198" target="_blank">DOI</a></li>
+          <li>Mitra, R., &amp; Das, J. (2025). Identification of channel shifting patterns and bank erosion-prone sites and challenges of riverine livelihood in the lower Tista River basin. <em>Environ Sci Pollut Res</em>. <a class="doi" href="https://doi.org/10.1007/s11356-024-35857-4" target="_blank">DOI</a></li>
+        </ul>
+
+        <div class="section-title">Chapters in Books</div>
+        <ul class="pub-list">
+          <li>Guria, R., Mishra, M., &amp; Das, J. (2025). Application of MARCOS, CoCoSo, and GRA MCDM Models in a Hybrid Approach for Landslide Susceptibility Assessment in Wayanad District, Kerala (India). In: Das, J., &amp; Halder, S. (eds) <em>Progress in Multicriteria Decision Making Models</em>. Springer. <a class="doi" href="https://doi.org/10.1007/978-3-031-89246-2_11" target="_blank">DOI</a></li>
+          <li>Barman, J., Kar, S., Barman, B., Das, J., Biswas, B., &amp; Roy, S. (2025). Flood Susceptibility Modeling of Tripura, India: An Application of Preference Selection Index (PSI) and Geospatial Technology. In: Das, J., &amp; Halder, S. (eds) <em>Progress in Multicriteria Decision Making Models</em>. Springer. <a class="doi" href="https://doi.org/10.1007/978-3-031-89246-2_13" target="_blank">DOI</a></li>
+          <li>Halder, S., Saha, S., Sarda, R., &amp; Das, J. (2025). Usage and Future Path of MCDM for Hazard Monitoring and Risk Assessment. In: Das, J., &amp; Halder, S. (eds) <em>Progress in Multicriteria Decision Making Models</em>. Springer. <a class="doi" href="https://doi.org/10.1007/978-3-031-89246-2_22" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2024 -->
+  <div class="year-block">
+    <details>
+      <summary>2024</summary>
+      <div class="content">
+        <div class="section-title">Book Publications</div>
+        <ul class="pub-list">
+          <li>Das, J., &amp; Halder, S. (2024). <em>New Advancement in Geomorphological Research: Issues and Challenges in Quantitative Spatial Science</em>. Springer, Cham. <a class="doi" href="https://doi.org/10.1007/978-3-031-64163-3" target="_blank">DOI</a></li>
+          <li>Chouhan, P., Roy, A., Kapasia, N., Das, J., &amp; Rahaman, M. (2024). <em>Sexual and Reproductive Health of Women - Dimensions and Perspectives</em>. Springer, Cham. <a class="doi" href="https://doi.org/10.1007/978-981-97-8418-9" target="_blank">DOI</a></li>
+        </ul>
+
+        <div class="section-title">Journal Articles</div>
+        <ul class="pub-list">
+          <li>Barman, J., Halder, S., Das, J., Ali, S. S., Hasher, F. F. B., Rukhsana &amp; Zhran, M. (2024). Sustainable Ecotourism Suitability Assessment Using the Integrated TOPSIS Model in the State of Mizoram, India. <em>Sustainability</em>, 16(24), 11066. <a class="doi" href="https://doi.org/10.3390/su162411066" target="_blank">DOI</a></li>
+          <li>Abraham, M., Santhanam, K., Meer, M.S., &amp; Das, J. (2024). An approach to demarcate prospective areas for groundwater recharge: A case Study of Upper Thurinjalar, Tamil Nadu, India. <em>Physics and Chemistry of the Earth</em>, 136, 103780. <a class="doi" href="https://doi.org/10.1016/j.pce.2024.103780" target="_blank">DOI</a></li>
+          <li>Zhran, M., Ghanem, K., Tariq, A., Alshehri, F., Jin, S., Das, J., et al. (2024). Exploring a GIS-based analytic hierarchy process for spatial flood risk assessment in Egypt: a case study of the Damietta branch. <em>Environ Sci Eur</em>, 36, 184. <a class="doi" href="https://doi.org/10.1186/s12302-024-01001-9" target="_blank">DOI</a></li>
+          <li>Arefin, R., Rahman, A.T.M.S., Das, J., Jahan, C.S., Mazumder, Q.H., Gomaa, E., Abd El Aal, A.K., Radwan, A.E. &amp; Youssef, Y.M. (2024). Megacity solid waste disposal suitability mapping in Dhaka, Bangladesh: an integrated approach using remote sensing, GIS and statistics. <em>Environ Monit Assess</em>, 196, 910. <a class="doi" href="https://doi.org/10.1007/s10661-024-13067-2" target="_blank">DOI</a></li>
+          <li>Osman, S.A., &amp; Das, J. (2024). A robust ensemble of hybrid and bivariate statistical models for flood prediction mapping in Lower Damodar River Basin of India. <em>Geosystems and Geoenvironment</em>, 3(4), 100312. <a class="doi" href="https://doi.org/10.1016/j.geogeo.2024.100312" target="_blank">DOI</a></li>
+          <li>Saha, P., Mitra, R., Das, J., &amp; Mandal, D.K. (2024). Urban Flash flood prediction modelling using probabilistic and statistical approaches. <em>Results in Earth Sciences</em>, 2, 100032. <a class="doi" href="https://doi.org/10.1016/j.rines.2024.100032" target="_blank">DOI</a></li>
+          <li>Barman, J., &amp; Das, J. (2024). Assessing classification system for landslide susceptibility using Frequency Ratio, AHP and geospatial technology mapping in Aizawl district, NE India. <em>Advances in Space Research</em>, 74(3), 1197–1224. <a class="doi" href="https://doi.org/10.1016/j.asr.2024.05.007" target="_blank">DOI</a></li>
+          <li>Barman, J., &amp; Das, J. (2024). Comprehensive landslide prediction mapping using bivariate statistical models of Mizoram state of Northeast India. <em>Journal of Spatial Science</em>, 69, 963–993. <a class="doi" href="https://doi.org/10.1080/14498596.2024.2335262" target="_blank">DOI</a></li>
+          <li>Nagamani, K., Mishra, A.K., Meer, M.S., &amp; Das, J. (2024). Understanding flash flooding in the Himalayan Region: a case study. <em>Scientific Reports</em>, 14, 7060. <a class="doi" href="https://doi.org/10.1038/s41598-024-53535-w" target="_blank">DOI</a></li>
+        </ul>
+
+        <div class="section-title">Chapters in Books</div>
+        <ul class="pub-list">
+          <li>Rahman, S., Hossain, A., Munam, A.M., Lima, A.A., Bhuiya, R.A., Das, J., &amp; Kamruzzaman, M. (2024). Mental Health of Pregnant Women in Bangladesh During the COVID-19 Pandemic: A Cross-Sectional Study. In: Chouhan, P., Roy, A., Kapasia, N., Das, J., Rahaman, M. (eds.), <em>Sexual and Reproductive Health of Women</em>. Springer. <a class="doi" href="https://doi.org/10.1007/978-981-97-8418-9_14" target="_blank">DOI</a></li>
+          <li>Halder, S., &amp; Das, J. (2024). Raising the Agenda of 'Paradigm Shift' in Applied Geomorphology: Question(s) or Acceptability. In: Das, J., &amp; Halder, S. (eds.), <em>New Advancements in Geomorphological Research</em>. Springer. <a class="doi" href="https://doi.org/10.1007/978-3-031-64163-3_1" target="_blank">DOI</a></li>
+          <li>Mitra, R., Das, J., &amp; Mandal, D.K. (2024). Geospatial Modelling of Tista River Flood Hazard and Its Impact on the Riparian Inhabitants in Eastern India. In: Das, J., &amp; Halder, S. (eds.), <em>New Advancements in Geomorphological Research</em>. Springer. <a class="doi" href="https://doi.org/10.1007/978-3-031-64163-3_19" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2023 -->
+  <div class="year-block">
+    <details>
+      <summary>2023</summary>
+      <div class="content">
+        <div class="section-title">Book Publications / Edited Volumes</div>
+        <ul class="pub-list">
+          <li>Das, J., &amp; Bhattacharya, S.K. (eds.) (2023). <em>Monitoring and Managing Multi-hazards: A Multidisciplinary Approach.</em> Springer, Cham. <a class="doi" href="https://doi.org/10.1007/978-3-031-15377-8" target="_blank">DOI</a></li>
+          <li>Das, J., &amp; Halder, S. (eds.) (2023). <em>Advancement of GI-Science and Sustainable Agriculture: A Multi-dimensional Approach.</em> Springer, Cham. <a class="doi" href="https://doi.org/10.1007/978-3-031-36825-7" target="_blank">DOI</a></li>
+          <li>Das, J., &amp; Alam, A. (eds.) (2023). <em>Recent Advancement in Geographical Studies: A Multidimensional Outlook.</em> Rajesh Publications. ISBN: 9789391139605</li>
+        </ul>
+
+        <div class="section-title">Journal Articles</div>
+        <ul class="pub-list">
+          <li>Sutradhar, C., Poddar, D., &amp; Das, J. (2023). Optimization of conditioning factors for groundwater potential zonation using GIS-based single parameter and map removal sensitivity analysis in Alipurduar district, West Bengal, India. <em>Modeling Earth Systems and Environment</em>, 10, 1671–1694. <a class="doi" href="https://doi.org/10.1007/s40808-023-01859-3" target="_blank">DOI</a></li>
+          <li>Barman, J., Ali, S.S., Biswas, B., &amp; Das, J. (2023). Application of index of entropy and geospatial techniques for landslide prediction in Lunglei district, Mizoram, India. <em>Natural Hazards Research</em>, 3(3), 508–521. <a class="doi" href="https://doi.org/10.1016/j.nhres.2023.06.006" target="_blank">DOI</a></li>
+          <li>Mitra, R., Das, J., &amp; Kamruzzaman, M. (2023). Application of TOPSIS method for flood susceptibility mapping using Excel and GIS. <em>MethodsX</em>, 11, 102263. <a class="doi" href="https://doi.org/10.1016/j.mex.2023.102263" target="_blank">DOI</a></li>
+          <li>Das, J., Saha, P., Mitra, R., Alam, A., &amp; Kamruzzaman, M. (2023). GIS-based data-driven bivariate statistical models for landslide susceptibility prediction in Upper Tista Basin, India. <em>Heliyon</em>, 9(5), e16186. <a class="doi" href="https://doi.org/10.1016/j.heliyon.2023.e16186" target="_blank">DOI</a></li>
+          <li>Osman, S.A., &amp; Das, J. (2023). GIS-based flood risk assessment using multi-criteria decision analysis of Shebelle River Basin in southern Somalia. <em>SN Applied Sciences</em>, 5, 134. <a class="doi" href="https://doi.org/10.1007/s42452-023-05360-5" target="_blank">DOI</a></li>
+          <li>Alam, J., Saha, P., Mitra, R., &amp; Das, J. (2023). Investigation of spatio-temporal variability of meteorological drought in the Luni River Basin, Rajasthan, India. <em>Arabian Journal of Geosciences</em>, 16(3), 201. <a class="doi" href="https://doi.org/10.1007/s12517-023-11290-8" target="_blank">DOI</a></li>
+        </ul>
+
+        <div class="section-title">Chapters in Books (selected)</div>
+        <ul class="pub-list">
+          <li>Multiple chapters in <em>Monitoring and Managing Multi-hazards</em> (Springer, 2023) — e.g., Barman et al., Mamun et al., Poddar et al. See the book DOI: <a class="doi" href="https://doi.org/10.1007/978-3-031-15377-8" target="_blank">10.1007/978-3-031-15377-8</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2022 -->
+  <div class="year-block">
+    <details>
+      <summary>2022</summary>
+      <div class="content">
+        <div class="section-title">Journal Articles</div>
+        <ul class="pub-list">
+          <li>Mitra, R., Das, J. (2022). A comparative assessment of flood susceptibility modelling of GIS-based TOPSIS, VIKOR, and EDAS techniques in the Sub-Himalayan foothills region of Eastern India. <em>Environmental Science and Pollution Research</em>, 30, 16036–16067. <a class="doi" href="https://doi.org/10.1007/s11356-022-23168-5" target="_blank">DOI</a></li>
+          <li>Mitra, R., Saha, P., &amp; Das, J. (2022). Assessment of the performance of GIS-based analytical hierarchical process (AHP) approach for flood modelling in Uttar Dinajpur district of West Bengal, India. <em>Geomatics, Natural Hazards and Risk</em>, 13(1), 2183–2226. <a class="doi" href="https://doi.org/10.1080/19475705.2022.2112094" target="_blank">DOI</a></li>
+          <li>Basak, A., Rahman, A.T.M.S., Das, J., Hosono, T., &amp; Kisi, O. (2022). Drought forecasting using the Prophet Model in semi-arid climate region of western India. <em>Hydrological Sciences Journal</em>, 67(9), 1397–1417. <a class="doi" href="https://doi.org/10.1080/02626667.2022.2082876" target="_blank">DOI</a></li>
+          <li>Kamruzzaman, M., Rahman, A.T.M.S., Basak, A., Alam, J., &amp; Das, J. (2022). Assessment and adaptation strategies of climate change through the prism of farmers' perception: A case study. <em>International Journal of Environmental Science and Technology</em>, 20(5), 5609–5628. <a class="doi" href="https://doi.org/10.1007/s13762-022-04254-0" target="_blank">DOI</a></li>
+          <li>Saha, S., Das, J., &amp; Mandal, T. (2022). Investigation of the watershed hydro-morphologic characteristics through the morphometric analysis: a study on Rayeng basin in Darjeeling Himalaya. <em>Environmental Challenges</em>, 7, 100463. <a class="doi" href="https://doi.org/10.1016/j.envc.2022.100463" target="_blank">DOI</a></li>
+          <li>Mandal, T., Saha, S., Das, J., &amp; Sarkar, A. (2022). Groundwater depletion susceptibility zonation using TOPSIS model in Bhagirathi river basin, India. <em>Modeling Earth Systems and Environment</em>, 8(2), 1711–1731. <a class="doi" href="https://doi.org/10.1007/s40808-021-01176-7" target="_blank">DOI</a></li>
+          <li>Choudhury, S., Basak, A., Biswas, S., &amp; Das, J. (2022). Flash Flood Susceptibility Mapping Using GIS-Based AHP Method. In Pradhan, B., Shit, P.K., Bhunia, G.S., et al. (eds.), <em>Spatial Modelling of Flood Risk and Flood Hazards</em>. Springer. <a class="doi" href="https://doi.org/10.1007/978-3-030-94544-2_8" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2021 -->
+  <div class="year-block">
+    <details>
+      <summary>2021</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Basak, A., Das, J., Rahman, A.T.M., &amp; Pham, Q.B. (2021). An Integrated Approach for Delineating and Characterizing Groundwater Depletion Hotspots in a Coastal State of India. <em>Journal of the Geological Society of India</em>, 97(11), 1429–1440. <a class="doi" href="https://doi.org/10.1007/s12594-021-1883-z" target="_blank">DOI</a></li>
+          <li>Das, J., Mandal, T., Rahman, A.S., &amp; Saha, P. (2021). Spatio-temporal characterization of rainfall in Bangladesh: an innovative trend and discrete wavelet transformation approaches. <em>Theoretical and Applied Climatology</em>, 143(3), 1557–1579. <a class="doi" href="https://doi.org/10.1007/s00704-020-03508-6" target="_blank">DOI</a></li>
+          <li>Das, J., Rahman, A.S., Mandal, T., &amp; Saha, P. (2021). Exploring driving forces of large-scale unsustainable groundwater development for irrigation in lower Ganga River basin in India. <em>Environment, Development and Sustainability</em>, 23(5), 7289–7309. <a class="doi" href="https://doi.org/10.1007/s10668-020-00917-5" target="_blank">DOI</a></li>
+          <li>Mandal, T., Sarkar, A., Das, J., Rahman, A.S., &amp; Chouhan, P. (2021). Comparison of Classical Mann–Kendall Test and Graphical Innovative Trend Analysis for Analyzing Rainfall Changes in India. In: <em>Climate Change Impacts, Mitigation and Adaptation in Developing Countries</em>. <a class="doi" href="https://doi.org/10.1007/978-3-030-67865-4_7" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2020 -->
+  <div class="year-block">
+    <details>
+      <summary>2020</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Das, J., Gayen, A., Saha, P., &amp; Bhattacharya, S.K. (2020). Meteorological drought analysis using Standardized Precipitation Index over Luni River Basin in Rajasthan, India. <em>SN Applied Sciences</em>, 2(9). <a class="doi" href="https://doi.org/10.1007/s42452-020-03321-w" target="_blank">DOI</a></li>
+          <li>Das, J., Rahman, A.S., Mandal, T., &amp; Saha, P. (2020). Challenges of sustainable groundwater management for large scale irrigation under changing climate in Lower Ganga River basin in India. <em>Groundwater for Sustainable Development</em>, 11, 100449. <a class="doi" href="https://doi.org/10.1016/j.gsd.2020.100449" target="_blank">DOI</a></li>
+          <li>Rahman, A.T.M.S., Hosono, T., Quilty, J.M., Das, J., &amp; Basak, A. (2020). Multiscale Groundwater Level Forecasting: Coupling New Machine Learning Approaches with Wavelet Transforms. <em>Advances in Water Resources</em>, 141, 103595. <a class="doi" href="https://doi.org/10.1016/j.advwatres.2020.103595" target="_blank">DOI</a></li>
+          <li>Das, J., Mandal, T., Saha, P., &amp; Bhattacharya, S.K. (2020). Variability and trends of rainfall using non-parametric approaches: A case study of semi-arid area. <em>MAUSAM</em>, 71(1), 33–44.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2019 -->
+  <div class="year-block">
+    <details>
+      <summary>2019</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Das, J., Mandal, T., &amp; Saha, P. (2019). Spatio-temporal trend and change point detection of winter temperature of North Bengal, India. <em>Spatial Information Research</em>, 27(4), 411–424. <a class="doi" href="https://doi.org/10.1007/s41324-019-00241-9" target="_blank">DOI</a></li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2018 -->
+  <div class="year-block">
+    <details>
+      <summary>2018</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Das, J., &amp; Bhattacharya, S.K. (2018). Trend analysis of long-term climatic parameters in Dinhata of Koch Bihar district, West Bengal. <em>Spatial Information Research</em>, 26(3), 271–280. <a class="doi" href="https://doi.org/10.1007/s41324-018-0173-3" target="_blank">DOI</a></li>
+          <li>Das, J. (2018). Regional disparity in the level of development in West Bengal: A geographical analysis. <em>Indian Journal of Regional Science</em>, 50(1), 53–63.</li>
+          <li>Das, J., &amp; Bhattacharya, S.K. (2018). Tobacco Cultivation: Time to Ban Its Production in Dinhata Subdivision of Koch Bihar District, West Bengal. <em>Research Directions</em>, 6(1), 1–10.</li>
+          <li>Poddar, D., Das, J., &amp; Mandal, T. (2018). Identification of Factors and Spatial Variation in the Level of Development in India: An Empirical Analysis. <em>Review of Research</em>, 7(10), 1–17.</li>
+          <li>Mandal, T., Poddar, D., &amp; Das, J. (2018). Nature and determinates of labour Migration: A case study of Koch Bihar district. <em>International Journal of Research and Analytical Reviews</em>, 5(3), 515–527.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2016 -->
+  <div class="year-block">
+    <details>
+      <summary>2016</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Das, J., &amp; Bhattacharya, S.K. (2016). Profitable and viable alternative to tobacco crop in Dinhata Subdivision of Koch Behar district, West Bengal. <em>Indian Journal of Landscape System and Ecological Studies</em>, 39(2), 70–88.</li>
+          <li>Das, J. (2016). Role of Self-Help Groups in Socioeconomic Change of Rural Women: A Micro Level Study. <em>Indian Streams Research Journal</em>, 6(1), 1–11.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2012 -->
+  <div class="year-block">
+    <details>
+      <summary>2012</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Das, J. (2012). Probability and variability analysis of rainfall characteristics of Dinhata in Koch Behar district of West Bengal. <em>Golden Research Thoughts</em>, 2(1), 1–9.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- 2011 -->
+  <div class="year-block">
+    <details>
+      <summary>2011</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Das, J. (2011). Factors influencing the socio-economic status of Toto tribe in Madarihat block of Jalpaiguri district, West Bengal. <em>Geo Analyst</em>, 1(2), 66–71.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <!-- Editorial work (optional block) -->
+  <div class="year-block">
+    <details>
+      <summary>Editorial Work &amp; Special Issues</summary>
+      <div class="content">
+        <ul class="pub-list">
+          <li>Lead Guest editor for special issue on <em>Integrating Geospatial Intelligence and Machine Learning for Smart Environmental Monitoring and Management</em>, Journal of Environmental Science and Pollution Research (Springer), IF 5.8 (2022).</li>
+          <li>Editor: Journal of Water (Open Access Pub) — editorial board member.</li>
+          <li>Lead Guest editor — Indian Journal of Spatial Science, Volume 15 (Special issue), 2024.</li>
+          <li>Lead Guest editor — Hill Geographer special issue on climate change &amp; hydro-geomorphological hazards.</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  &copy; <span id="year"></span> Dr. Jayanta Das — Publications
+</footer>
 
 <script>
-  fetch('publications.json')
-    .then(response => response.json())
-    .then(data => {
-      let container = document.getElementById('publications-container');
-      container.innerHTML = '';
-
-      for (const year of Object.keys(data)) {
-        let block = document.createElement('div');
-        block.className = 'year-block';
-
-        let details = document.createElement('details');
-        let summary = document.createElement('summary');
-        summary.textContent = year;
-        details.appendChild(summary);
-
-        let content = document.createElement('div');
-        content.className = 'content-list';
-        let ul = document.createElement('ul');
-
-        data[year].forEach(pub => {
-          let li = document.createElement('li');
-          li.innerHTML = pub; // already contains HTML links from your script
-          ul.appendChild(li);
-        });
-
-        content.appendChild(ul);
-        details.appendChild(content);
-        block.appendChild(details);
-        container.appendChild(block);
-      }
-    })
-    .catch(error => {
-      document.getElementById('publications-container').innerHTML = '<p>Error loading publications.</p>';
-      console.error(error);
-    });
+  // show current year in footer
+  document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
-
-<div id="footer"></div>
-<script>
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        });
-</script>
