@@ -2,53 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home – Dr. Jayanta Das</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jayanta Das | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        .profile-img {
+            border-radius: 50%;
+            max-width: 200px;
+            border: 4px solid white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
 
-<!-- Navigation -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="news.html">News</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="projects.html">Projects</a>
-    <a href="achievements.html">Achievements</a>
-    <a href="publications.html">Publications</a>
-    <a href="team.html">Team</a>
-    <a href="social-activities.html">Social Activities</a>
-</nav>
+<div class="container py-5">
+    <div class="card p-4 text-center">
+        <img src="My_Photo_2025.jpeg" alt="Dr. Jayanta Das" class="profile-img mx-auto mb-3">
+        <h1 class="mb-1">Dr. Jayanta Das</h1>
+        <p class="text-muted">Professor of Geography | Researcher | Educator</p>
+        <p>Welcome to my personal website! Here you'll find my research, publications, news, and achievements.</p>
+        <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="teaching.html" class="btn btn-primary">Teaching</a>
+            <a href="publications.html" class="btn btn-success">Publications</a>
+            <a href="news.html" class="btn btn-warning">News</a>
+            <a href="achievements.html" class="btn btn-info">Achievements</a>
+        </div>
+    </div>
+</div>
 
-<!-- Main Content -->
-<main class="container">
-    <h1>Welcome to Dr. Jayanta Das’s Website</h1>
-    <p>
-        I am an academician and researcher specializing in Geoinformatics, Remote Sensing, and Environmental Studies.
-        My work focuses on sustainable development, natural resource management, and geospatial data analysis.
-    </p>
-    <p>
-        Browse through my teaching resources, publications, research projects, and achievements to learn more about my work and contributions.
-    </p>
-
-    <h2>Quick Links</h2>
-    <ul>
-        <li><a href="publications.html">View my Publications</a></li>
-        <li><a href="projects.html">Current Projects</a></li>
-        <li><a href="team.html">Meet My Research Team</a></li>
-        <li><a href="social-activities.html">Social Initiatives</a></li>
-    </ul>
-</main>
-
-<!-- Footer -->
-<div id="footer"></div>
-<script>
-    fetch('footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer').innerHTML = data;
-        });
-</script>
+<footer class="text-center mt-5 mb-3 text-muted">
+    © 2025 Jayanta Das. All Rights Reserved
+</footer>
 
 </body>
 </html>
