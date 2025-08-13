@@ -70,11 +70,15 @@
 <header>
     <h1>News & Updates</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Teaching.html">Teaching</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="news.html">News</a>
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="projects.html">Projects</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="social-activities.html">Social Activities</a>
+    <a href="blog.html">Blog</a>
     </nav>
 </header>
 
@@ -83,31 +87,51 @@
         <h2>Latest Announcements</h2>
 
         <div class="news-item">
-            <p class="date">August 10, 2025</p>
-            <p>Invited as keynote speaker for the International Conference on Remote Sensing and Sustainable Development, New Delhi.</p>
+            <p class="date">July 19, 2025</p>
+            <p>Delivered Keynote in International Conference on “Improving Early-Season Crop Type Mapping Using Machine Learning Algorithms with Combined SAR and Optical time series” Organized by Department of Civil Engineering and Basic Sciences & Humanities, <em>Gandhi Institute for Education and Technology,<em> Banaitangi.</p>
         </div>
 
+         <div class="news-item">
+            <p class="date">May 19 to July 11, 2025</p>
+            <p>Successfully Completed ISRO sponsored NNRMS Faculty Development Program on “RS & GIS Technology and Applications with specialization in RS & GIS Applications in Agriculture & Soil Studies” Organized by <em>Indian Institute of Remote Sensing.</em></p>
+        </div>     
+                
         <div class="news-item">
-            <p class="date">July 25, 2025</p>
-            <p>Research article on "SAR-Optical Fusion for Crop Classification" accepted in <em>Remote Sensing Letters</em>.</p>
+            <p class="date">May 15, 2025</p>
+            <p>Delivered lecture in 2 days International Seminar on “Future Climate Scenario vs Flood Risk in the Uttar Dinajpur District of West Bengal, India: a MCDM approach for Viksit Bharat @ 2047” Organized by Department of Geography, <em>Vidyasagar College</em>.</p>
         </div>
-
-        <div class="news-item">
-            <p class="date">July 10, 2025</p>
-            <p>Successfully conducted a week-long GIS training workshop for postgraduate students at Rampurhat College.</p>
+                
+<div class="news-item">
+            <p class="date">April 11, 2025</p>
+            <p>Delivered Lecture in International Conference on Geospatial Innovation and Disaster Risk Reduction (DRR): Towards Viksit Bharat” Organized by <em>Tilka Manjhi Bhagalpur University<em>.</p>
         </div>
-
+                
+<div class="news-item">
+            <p class="date">March 20, 2025</p>
+            <p>Launched field surveys for ICSSR-funded Jal Jeevan Mission project in West Bengal and Assam.</p>
+        </div>               
         <div class="news-item">
-            <p class="date">June 20, 2025</p>
-            <p>Launched field surveys for ANRF-funded Makhana–Fish Farming project in West Bengal and Assam.</p>
+            <p class="date">January 10-11, 2025</p>
+            <p>Successfully conducted 7th Regional Science and Technology Congress- 2024-25, Region-3, Jointly Organized by Rampurhat College & Department of Science & Technology and Biotechnology, Government of West Bengal, January 10-11, 2025, as a Nodal officer, at Rampurhat College.</p>
         </div>
 
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Dr. Jayanta Das | All Rights Reserved</p>
-</footer>
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
 
 </body>
 </html>
+
+
+
+

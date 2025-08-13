@@ -67,10 +67,15 @@
 <header>
     <h1>Achievements</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="Projects.html">Projects</a>
-        <a href="Teaching.html">Teaching</a>
-        <a href="achievements.html">Achievements</a>
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="projects.html">Projects</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="social-activities.html">Social Activities</a>
+    <a href="blog.html">Blog</a>
     </nav>
 </header>
 
@@ -80,7 +85,7 @@
         <ul>
             <li>Principal Investigator for ICSSR and ANRF-funded research projects.</li>
             <li>Convener of multiple International Seminars in Geography and Sustainability.</li>
-            <li>Published 50+ research articles in peer-reviewed journals.</li>
+            <li>Published 80+ research articles in peer-reviewed journals.</li>
             <li>Editor of an upcoming volume on Geography and Sustainability.</li>
         </ul>
     </section>
@@ -88,8 +93,8 @@
     <section>
         <h2>Awards & Honors</h2>
         <ul>
-            <li>Recipient of the National Research Excellence Award, 2023.</li>
-            <li>Recognized as Outstanding Faculty in Geospatial Sciences, 2022.</li>
+            <li>Host Scientist for CV Raman International Fellowship, 2022.</li>
+            <li>Best Paper Presentation Award, 2020, Department of Science & Technology and Biotechnology, Government of West Bengal.</li>
         </ul>
     </section>
 
@@ -97,15 +102,28 @@
         <h2>Professional Contributions</h2>
         <ul>
             <li>Reviewer for leading journals in Remote Sensing and GIS.</li>
-            <li>Advisor for GIS-based disaster management planning projects.</li>
-            <li>Mentored 10+ postgraduate research scholars.</li>
+            <li>Lead Guest, Journal of Environmental Science and Pollution Research.</li>
+          <li>Lead Guest, Indian Journal of Spatial Science.</li>
+            <li>Lead Guest, Hill Geographer.</li>
         </ul>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Dr. Jayanta Das | All Rights Reserved</p>
-</footer>
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
 
 </body>
 </html>
+
+
+
+
+

@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home – Dr. Jayanta Das</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #f3f8fc;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1f4b6e;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            background-color: transparent;
+        }
+        nav a:hover {
+            background-color: #0d6efd;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            align-items: center;
+        }
+        .profile-card img {
+            width: 250px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .profile-content {
+            flex: 1;
+        }
+        h1 {
+            margin-top: 0;
+            color: #004466;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #006699;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Social Icon Styles */
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            font-size: 26px;
+            margin: 0 10px;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #0d6efd;
+        }
+
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-card img {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -18,27 +117,46 @@
     <a href="publications.html">Publications</a>
     <a href="team.html">Team</a>
     <a href="social-activities.html">Social Activities</a>
+    <a href="blog.html">Blog</a>
 </nav>
 
 <!-- Main Content -->
-<main class="container">
-    <h1>Welcome to Dr. Jayanta Das’s Website</h1>
-    <p>
-        I am an academician and researcher specializing in Geoinformatics, Remote Sensing, and Environmental Studies.
-        My work focuses on sustainable development, natural resource management, and geospatial data analysis.
-    </p>
-    <p>
-        Browse through my teaching resources, publications, research projects, and achievements to learn more about my work and contributions.
-    </p>
+<div class="container">
+    <div class="profile-card">
+        <img src="jayanta.jpeg" alt="Dr. Jayanta Das">
+        <div class="profile-content">
+            <h1>Welcome to Dr. Jayanta Das’s Website</h1>
+            <p>
+                I am Dr. Jayanta Das, Assistant Professor and Head of the Department of Geography at Rampurhat College, holding a PhD from the University of North Bengal. As an academician and researcher specializing in Geoinformatics, Remote Sensing, and Environmental Studies, my work focuses on sustainable development, natural resource management, and geospatial data analysis. With expertise in climate change, natural hazards, and RS & GIS, I have authored over 80 research papers and books with Springer and Elsevier, led ICSSR and ANRF-funded projects, and mentored researchers globally under the CV Raman Fellowship.
+            </p>
+            <p>
+                Browse through my teaching resources, publications, research projects, and achievements to learn more about my work and contributions.
+            </p>
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="publications.html">📚 View my Publications</a></li>
+                <li><a href="projects.html">🗂 Current Projects</a></li>
+                <li><a href="team.html">👥 Meet My Research Team</a></li>
+                <li><a href="social-activities.html">🌱 Social Initiatives</a></li>
+            </ul>
 
-    <h2>Quick Links</h2>
-    <ul>
-        <li><a href="publications.html">View my Publications</a></li>
-        <li><a href="projects.html">Current Projects</a></li>
-        <li><a href="team.html">Meet My Research Team</a></li>
-        <li><a href="social-activities.html">Social Initiatives</a></li>
-    </ul>
-</main>
+            <!-- Social Icons -->
+            <div class="social-links">
+                <a href="https://orcid.org/0000-0003-0995-9114" target="_blank" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=57216782359" target="_blank" title="Scopus"><i class="fa-solid fa-database"></i></a>
+                <a href="https://www.webofscience.com/wos/author/record/Q-2708-2018" target="_blank" title="Web of Science"><i class="fa-solid fa-flask"></i></a>
+                <a href="https://vidwan.inflibnet.ac.in/profile/260591" target="_blank" title="Vidwan"><i class="fa-solid fa-id-badge"></i></a>
+                <a href="https://scholar.google.com/citations?hl=en&user=j6ekzokAAAAJ" target="_blank" title="Google Scholar"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.researchgate.net/profile/Jayanta-Das-7" target="_blank" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+                <a href="https://www.youtube.com/channel/UCIyda53XpQzDT1b2C8ciwYA" target="_blank" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.udemy.com/user/jayanta-das-15/" target="_blank" title="Udemy"><i class="fa-brands fa-udemy"></i></a>
+                <a href="https://www.linkedin.com/in/dr-jayanta-das-4680815a/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/jayanta.das.90663/" target="_blank" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/daas_jayanta" target="_blank" title="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Footer -->
 <div id="footer"></div>
