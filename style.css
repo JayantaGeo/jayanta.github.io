@@ -93,6 +93,15 @@ nav a:hover {
         width: 100%;
     }
 }
+.social-links a {
+    font-size: 26px;
+    margin: 0 8px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.social-links img {
+    vertical-align: middle;
+}
 
 /* Footer styles */
 footer {
@@ -111,3 +120,4 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+
