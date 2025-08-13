@@ -117,11 +117,19 @@
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Dr. Jayanta Das | All Rights Reserved</p>
-</footer>
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
 
 </body>
 </html>
+
 
 
