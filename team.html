@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Team – Dr. Jayanta Das</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        :root {
+            --nav: #1f4b6e;
+            --brand: #0d6efd;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+            padding: 20px;
+            text-align: center;
+            background-color: var(--nav);
+            color: white;
+        }
+        nav {
+            background: var(--nav);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 14px;
+             background-color: transparent;
+        }
+        nav a:hover {
+            background: var(--brand);
+            color: #000;
+        }
+        .container {
+            max-width: 980px;
+            margin: 22px auto;
+            padding: 0 16px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+        .team-member h3 {
+            margin: 5px 0;
+            font-size: 1.1rem;
+            color: var(--nav);
+        }
+        .team-member p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Research Team</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="projects.html">Projects</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="social-activities.html">Social Activities</a>
+    <a href="blog.html">Blog</a>
+</nav>
+
+<div class="container">
+    <div class="team-grid">
+        <div class="team-member">
+            <img src="images/jayanta.jpeg" alt="Dr. Jayanta Das">
+            <h3>Dr. Jayanta Das</h3>
+            <p>Assistant Professor & Head<br>Dept. of Geography, Rampurhat College</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/member1.jpg" alt="Research Scholar 1">
+            <h3>Research Scholar 1</h3>
+            <p>PhD Candidate<br>Specializing in Crop Mapping with SAR-Optical Fusion</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/member2.jpg" alt="Research Scholar 2">
+            <h3>Research Scholar 2</h3>
+            <p>GIS Analyst<br>Focus on Flood Modelling and Hazard Assessment</p>
+        </div>
+
+        <div class="team-member">
+            <img src="images/member3.jpg" alt="Research Scholar 3">
+            <h3>Research Scholar 3</h3>
+            <p>Masters Student<br>Working on Climate Change Impact Studies</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>
