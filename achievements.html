@@ -92,8 +92,8 @@
     <section>
         <h2>Awards & Honors</h2>
         <ul>
-            <li>Recipient of the National Research Excellence Award, 2023.</li>
-            <li>Recognized as Outstanding Faculty in Geospatial Sciences, 2022.</li>
+            <li>Host Scientist for CV Raman International Fellowship, 2022.</li>
+            <li>3.	Best Paper Presentation Award, 2020, Department of Science & Technology and Biotechnology, Government of West Bengal.</li>
         </ul>
     </section>
 
@@ -101,17 +101,26 @@
         <h2>Professional Contributions</h2>
         <ul>
             <li>Reviewer for leading journals in Remote Sensing and GIS.</li>
-            <li>Advisor for GIS-based disaster management planning projects.</li>
-            <li>Mentored 10+ postgraduate research scholars.</li>
+            <li>Lead Guest, Journal of Environmental Science and Pollution Research.</li>
+          <li>Lead Guest, Indian Journal of Spatial Science.</li>
+            <li>Lead Guest, Hill Geographer.</li>
         </ul>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 Dr. Jayanta Das | All Rights Reserved</p>
-</footer>
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
 
 </body>
 </html>
+
 
 
