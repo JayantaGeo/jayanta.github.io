@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — Dr. Jayanta Das</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 10px;
+        }
+        nav {
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #1abc9c;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 15px;
+        }
+        article {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        article img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .date {
+            color: gray;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog — Dr. Jayanta Das</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="projects.html">Projects</a>
+    <a href="achievements.html">Achievements</a>
+    <a href="publications.html">Publications</a>
+    <a href="team.html">Team</a>
+    <a href="social_activities.html">Social Activities</a>
+    <a href="blog.html">Blog</a>
+</nav>
+
+<main>
+    <!-- Featured Blog Post -->
+    <article>
+        <h2>Sentinel SAR–Optical Fusion for High-Accuracy Crop Mapping</h2>
+        <p class="date">Published: August 13, 2025</p>
+        <img src="images/sar_optical_fusion.jpg" alt="Sentinel SAR and Optical Fusion for Crop Mapping">
+        <p>
+            Accurate crop mapping is essential for agricultural monitoring, yield estimation, and food security planning. 
+            Traditional optical remote sensing, while powerful, is often hindered by cloud cover during the crop growing season. 
+            Synthetic Aperture Radar (SAR) from Sentinel-1 overcomes this limitation by providing all-weather, day-and-night imaging. 
+            However, SAR alone may lack the spectral richness required for precise crop classification.
+        </p>
+        <p>
+            In this research, I implemented a <strong>multi-temporal fusion</strong> of Sentinel-1 SAR backscatter data with Sentinel-2 optical 
+            reflectance bands using the Google Earth Engine platform. Speckle filtering techniques, including the Lee filter, were applied 
+            to enhance SAR data quality. Multi-temporal composites were generated to capture seasonal phenological changes in crops.
+        </p>
+        <p>
+            A Random Forest classifier was employed, leveraging both SAR backscatter (VV, VH) and optical spectral indices such as NDVI, 
+            EVI, and Red-Edge indices. The fusion significantly improved classification accuracy — achieving <strong>over 90% overall accuracy</strong> 
+            in Udham Singh Nagar district case study, outperforming single-source datasets.
+        </p>
+        <p>
+            This SAR–optical fusion approach demonstrates immense potential for operational agricultural monitoring, particularly in 
+            monsoon-dominated regions where cloud cover is frequent.
+        </p>
+    </article>
+
+    <!-- More blog posts can be added below -->
+</main>
+
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer').innerHTML = data;
+        });
+</script>
+
+</body>
+</html>
